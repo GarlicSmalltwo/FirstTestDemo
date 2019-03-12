@@ -1,7 +1,7 @@
 public class Singleton{
 //饿汉式:类初始化时会立即加载该对象，天生线程安全，调用效率高，储存在静态区中，垃圾回收机制不会回收此对象；在不使用这个对象的情况下，会造成内存浪费。
 private static final Singleton singleton=new Singleton();
-
+//修改一下这个饿汉式，只为了测试本地仓库推送内容给远程仓库
 private static Singleton getInstance(){
     
     return singleton;
