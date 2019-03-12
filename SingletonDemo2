@@ -1,5 +1,5 @@
 public class SingletonDemo2{
-    
+    //懒汉式：类初始化时，不会初始化该对象，真正需要使用的时候才会创建该对象，具备懒加载，天生线程不安全，需要解决线程安全问题，效率比较低
     private static SingletonDemo2 singletonDemo2;
 
     private static synchronized SingletonDemo2 getInstance(){
