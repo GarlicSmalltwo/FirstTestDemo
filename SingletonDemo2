@@ -1,4 +1,5 @@
 public class SingletonDemo2{
+    
     private static SingletonDemo2 singletonDemo2;
 
     private static synchronized SingletonDemo2 getInstance(){
