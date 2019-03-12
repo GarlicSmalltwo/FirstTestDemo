@@ -1,0 +1,12 @@
+public class SingletonDemo2{
+    private static SingletonDemo2 singletonDemo2;
+
+    private static synchronized SingletonDemo2 getInstance(){
+           if(singletonDemo2==null){
+	      singletonDemo2=new SingletonDemo2();
+	   }   
+          
+	   return singletonDemo2;
+    }
+
+}
