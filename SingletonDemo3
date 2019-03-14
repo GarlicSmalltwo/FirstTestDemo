@@ -1,0 +1,18 @@
+public class SingletonDemo4{
+    //双层锁式
+    private SingletonDemo4 singletonDemo4;
+    
+    public SingletonDemo4 getInstance(){
+         if(singletonDemo4==null){
+             synchronized(this){
+                if(singletonDemo4==null){
+                   singletonDemo4=new SingletonDemo4();
+                }
+             }
+         }
+         
+         return singletonDemo4;
+    }
+    
+    
+}
